@@ -20,4 +20,10 @@ INCR
 
 > (map incr l)
 (2 3 4)
+
+> (define (fact x) (if (= x 0) 1 (* x (fact (- x 1)))))
+FACT
+
+> (fact 10)
+3628800
 ```
